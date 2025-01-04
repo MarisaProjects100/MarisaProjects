@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navidad - Estilos CSS y Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/styleConjunto.css"> <!-- Archivo CSS personalizado -->
+    <link rel="icon" href="img/LOGO.png" type="image/png"> <!-- Favicon -->
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="img/LOGO.png" alt="Logo Navidad" class="logo" style="height: 50px;">
+            <h1 class="h3">Feliz Navidad</h1>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+                <button class="btn btn-danger" type="submit">🔍</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">Navidad</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="css-page.html">Estilo CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="bootstrap-page.html">Estilo Bootstrap</a>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Historia de la Navidad
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="https://es.wikipedia.org/wiki/Historia_de_la_Navidad"
+                                    target="_blank">Historia de la Navidad</a></li>
+                            <li><a class="dropdown-item" href="https://es.wikipedia.org/wiki/Papa_Noel"
+                                    target="_blank">Papá Noel</a></li>
+                            <li><a class="dropdown-item" href="https://es.wikipedia.org/wiki/El_árbol_de_Navidad"
+                                    target="_blank">El Árbol de Navidad</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <aside class="sidebar bg-dark text-white p-4">
+            <h3 class="text-danger">Enlaces Rápidos</h3>
+            <ul class="list-unstyled">
+                <li><a href="#seccion-noticias" class="text-white">Noticias</a></li>
+                <li><a href="#seccion-productos" class="text-white">Productos</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Navidad" target="_blank" class="text-white">Más sobre
+                        Navidad</a>
+                </li>
+            </ul>
+
+            <h3 class="text-danger">Cosas de Navidad</h3>
+            <ol class="">
+                <li>Árbol de Navidad</li>
+                <li>Luces Navideñas</li>
+                <li>Regalos</li>
+                <li>Comida típica de Navidad</li>
+                <li>Canciones Navideñas</li>
+                <li>Adornos para el hogar</li>
+                <li>Santa Claus</li>
+                <li>Reuniones familiares</li>
+            </ol>
+        </aside>
+
+
+        <!-- Contenido principal -->
+        <main class="container my-4" style="margin-left: 270px;">
+            <!-- Carrousel -->
+            <section class="mb-5">
+                <h2 class="text-center text-danger">Galería Navideña</h2>
+                <div id="carouselExample" class="carousel slide mx-auto" style="width: 600px;" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/CARR1.png" class="d-block w-100" alt="Navidad 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/CARR2.png" class="d-block w-100" alt="Navidad 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/CARR3.png" class="d-block w-100" alt="Navidad 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Productos Destacados -->
+            <section class="mb-5">
+                <h2 class="text-center text-danger">Productos Destacados</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="img/arbol-de-navidad.png" class="card-img-top img-fluid" alt="Árbol de Navidad"
+                                style="height: 200px; object-fit: contain;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Árbol de Navidad</h5>
+                                <p class="card-text flex-grow-1">Perfecto para decorar tu hogar.</p>
+                                <a href="#" class="btn btn-danger mt-auto">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="img/Luces_de_navidad.png" class="card-img-top img-fluid" alt="Luces Navideñas"
+                                style="height: 200px; object-fit: contain;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Luces Navideñas</h5>
+                                <p class="card-text flex-grow-1">Ilumina tu Navidad con estilo.</p>
+                                <a href="#" class="btn btn-danger mt-auto">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="img/Decoraciones.png" class="card-img-top img-fluid" alt="Decoraciones"
+                                style="height: 200px; object-fit: contain;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Decoraciones</h5>
+                                <p class="card-text flex-grow-1">Detalles únicos para tu árbol.</p>
+                                <a href="#" class="btn btn-danger mt-auto">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="container my-5">
+                <h2 class="text-center text-danger mb-4">Galería Navideña</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- Imagen 1 -->
+                    <div class="col">
+                        <div class="card d-flex h-100">
+                            <img src="https://static.vecteezy.com/system/resources/thumbnails/026/304/994/small_2x/outdoor-christmas-decorations-and-a-beautifully-decorated-christmas-tree-ai-generated-photo.jpg"
+                                class="card-img-top" alt="Decoraciones Navideñas">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Decoraciones Exteriores de Navidad</h5>
+                                <p class="card-text">Hermosa decoración navideña exterior con un árbol de Navidad
+                                    espectacular.</p>
+                                <a href="#" class="btn btn-danger mt-auto">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Imagen 2 -->
+                    <div class="col">
+                        <div class="card d-flex h-100">
+                            <img src="https://img.freepik.com/vector-premium/lindo-dibujos-animados-papa-noel-arbol-navidad-rodeado-regalos-adornos_1280751-70524.jpg"
+                                class="card-img-top" alt="Papá Noel y Árbol de Navidad">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Papá Noel y Árbol de Navidad</h5>
+                                <p class="card-text">Ilustración colorida de Papá Noel rodeado de regalos y adornos
+                                    navideños.</p>
+                                <a href="#" class="btn btn-danger mt-auto">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Imagen 3 -->
+                    <div class="col">
+                        <div class="card d-flex h-100">
+                            <img src="https://services.meteored.com/img/article/el-origen-del-arbol-de-navidad-y-su-relacion-con-el-solsticio-regalos-papa-noel-jesus-nochebuena-1702113256181_1280.jpeg"
+                                class="card-img-top" alt="El origen del Árbol de Navidad">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">El Origen del Árbol de Navidad</h5>
+                                <p class="card-text">Exploramos el origen histórico del árbol de Navidad y su relación
+                                    con el
+                                    solsticio de invierno.</p>
+                                <a href="#" class="btn btn-danger mt-auto">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="mb-5">
+                <h2 class="text-center text-danger">Enlaces Útiles</h2>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="#" class="text-danger">Cómo decorar tu casa para Navidad</a>
+                    </li>
+                    <li class="list-group-item"><a href="#" class="text-danger">Recetas tradicionales navideñas</a></li>
+                    <li class="list-group-item"><a href="#" class="text-danger">Manualidades para Navidad</a></li>
+                </ul>
+            </section>
+
+            <section id="seccion-tabla">
+                <h2>Tabla Navideña</h2>
+                <table class="tabla-navidad">
+                    <thead>
+                        <tr>
+                            <th>Elemento</th>
+                            <th>Descripción</th>
+                            <th>Imagen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Árbol de Navidad</td>
+                            <td>Un hermoso árbol decorado con luces y adornos festivos.</td>
+                            <td><img src="img/arbol-de-navidad.png" alt="Árbol de Navidad" class="tabla-img"></td>
+                        </tr>
+                        <tr>
+                            <td>Luces Navideñas</td>
+                            <td>Luces brillantes para iluminar tu hogar en la Navidad.</td>
+                            <td><img src="img/Luces_de_navidad.png" alt="Luces Navideñas" class="tabla-img"></td>
+                        </tr>
+                        <tr>
+                            <td>Decoraciones</td>
+                            <td>Decoraciones para adornar el árbol o tu hogar.</td>
+                            <td><img src="img/Decoraciones.png" alt="Decoraciones" class="tabla-img"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+
+            <section id="seccion-media" class="text-center py-5">
+                <!-- Video -->
+                <h2 class="text-danger">Video Navideño</h2>
+                <div class="d-flex justify-content-center mb-4">
+                    <video controls width="600">
+                        <source src="source/3565-172488151_small.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Audio -->
+                <h2 class="text-danger">Audio Navideño</h2>
+                <div class="d-flex justify-content-center">
+                    <audio controls>
+                        <source src="source/christmas-whoosh_2-264375.mp3" type="audio/mp3">
+                        Tu navegador no soporta el formato de audio.
+                    </audio>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white py-3">
+
+        <div class="container text-center">
+            <p>&copy; 2025 Navidad Mágica. Todos los derechos reservados.</p>
+            <p><a href="#" class="text-danger">Política de privacidad</a> | <a href="#" class="text-danger">Términos de
+                    uso</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navidad - Página Principal</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Archivo CSS personalizado -->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/LOGO.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img src="img/LOGO.png" alt="Logo Navidad" class="logo">
+            <h1>Feliz Navidad</h1>
+            <form action="#" class="search-box">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit">🔍</button>
+            </form>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="css-page.html">Estilo CSS</a></li>
+            <li><a href="bootstrap-page.html">Estilo Bootstrap</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>Enlaces Rápidos</h3>
+            <ul>
+                <li><a href="#seccion-noticias">Noticias</a></li>
+                <li><a href="#seccion-productos">Productos</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Navidad" target="_blank">Más sobre Navidad</a></li>
+            </ul>
+
+            <!-- Lista ordenada de cosas de Navidad -->
+            <h3>Cosas de Navidad</h3>
+            <ol>
+                <li>Árbol de Navidad</li>
+                <li>Luces Navideñas</li>
+                <li>Regalos</li>
+                <li>Comida típica de Navidad</li>
+                <li>Canciones Navideñas</li>
+                <li>Adornos para el hogar</li>
+                <li>Santa Claus</li>
+                <li>Reuniones familiares</li>
+            </ol>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main>
+
+            <!-- Nueva sección con superposición -->
+            <section id="superposition-section">
+                <div class="superposition-container">
+                    <div class="superposition-content">
+                        <h2>¡Celebra la Navidad con Nosotros!</h2>
+                        <p>Disfruta de nuestras ofertas navideñas y haz que esta temporada sea inolvidable.</p>
+                        <a href="#seccion-productos" class="btn btn-light">Descubre más</a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="seccion-noticias">
+                <h2>Sección de Noticias</h2>
+                <article>
+                    <h3>El espíritu navideño</h3>
+                    <p>La Navidad es una época mágica llena de alegría y unión familiar...</p>
+                    <a href="https://es.wikipedia.org/wiki/Navidad" target="_blank">Leer más</a>
+                </article>
+            </section>
+
+            <section id="seccion-productos">
+                <h2>Productos Destacados</h2>
+                <ul class="productos">
+                    <li>
+                        <img src="img/arbol-de-navidad.png" alt="Árbol de Navidad">
+                        <p>Árbol de Navidad</p>
+                    </li>
+                    <li>
+                        <img src="img/Luces_de_navidad.png" alt="Luces navideñas">
+                        <p>Luces navideñas</p>
+                    </li>
+                    <li>
+                        <img src="img/Decoraciones.png" alt="Decoraciones">
+                        <p>Decoraciones</p>
+                    </li>
+                </ul>
+            </section>
+
+
+            <section id="seccion-tabla">
+                <h2>Tabla Navideña</h2>
+                <table class="tabla-navidad">
+                    <thead>
+                        <tr>
+                            <th>Elemento</th>
+                            <th>Descripción</th>
+                            <th>Imagen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Árbol de Navidad</td>
+                            <td>Un hermoso árbol decorado con luces y adornos festivos.</td>
+                            <td><img src="img/arbol-de-navidad.png" alt="Árbol de Navidad" class="tabla-img"></td>
+                        </tr>
+                        <tr>
+                            <td>Luces Navideñas</td>
+                            <td>Luces brillantes para iluminar tu hogar en la Navidad.</td>
+                            <td><img src="img/Luces_de_navidad.png" alt="Luces Navideñas" class="tabla-img"></td>
+                        </tr>
+                        <tr>
+                            <td>Decoraciones</td>
+                            <td>Decoraciones para adornar el árbol o tu hogar.</td>
+                            <td><img src="img/Decoraciones.png" alt="Decoraciones" class="tabla-img"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="seccion-media">
+                <!-- Video -->
+                <h2>Video Navideño</h2>
+                <video controls width="600">
+                    <source src="./source/3565-172488151_small.mp4" type="video/mp4">
+                    Tu navegador no soporta el formato de video.
+                </video>
+
+                <!-- Audio -->
+                <h2>Audio Navideño</h2>
+                <audio controls>
+                    <source src="./source/christmas-whoosh_2-264375.mp3" type="audio/mp3">
+                    Tu navegador no soporta el formato de audio.
+                </audio>
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Navidad Mágica. Todos los derechos reservados.</p>
+        <p><a href="#">Política de privacidad</a> | <a href="#">Términos de uso</a></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+/* General */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Custom Section */
+.custom-section {
+  background-color: #f2f2f2;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-section h2 {
+  color: #c82333;
+  /* Rojo navideño */
+  font-family: 'Cookie', cursive;
+}
+
+.custom-text {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.custom-buttons .btn {
+  margin: 10px;
+}
+
+/* Imágenes de las cartas */
+.img-fixed {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Estilo para la tabla navideña */
+.tabla-navidad {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-navidad th,
+.tabla-navidad td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.tabla-navidad th {
+  background-color: #d9534f;
+  color: white;
+  font-family: 'Cookie', cursive;
+  font-size: 1.2rem;
+}
+
+.tabla-navidad td {
+  color: #343a40;
+  font-size: 1rem;
+}
+
+.tabla-navidad tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.tabla-navidad tr:hover {
+  background-color: #f1f1f1;
+  /* Cambia el color de fondo al pasar el cursor */
+}
+
+/* Efecto de hover en las imágenes */
+.tabla-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tabla-img:hover {
+  transform: rotate(15deg);
+  /* Gira la imagen 15 grados */
+}
+
+/* Sidebar */
+aside {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #343a40;
+  padding: 20px;
+  color: white;
+}
+
+/* Listas dentro del sidebar */
+aside h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+aside ol {
+  padding-left: 20px;
+}
+
+aside ol li {
+  margin-bottom: 10px;
+}
+
+aside ol li a {
+  color: white;
+  text-decoration: none;
+}
+
+aside ol li a:hover {
+  color: #ff6347;
+}
+
+/* Contenido principal (con margen para no sobreponerse al sidebar) */
+main {
+  margin-left: 270px;
+  /* Desplaza el contenido hacia la derecha */
+}
